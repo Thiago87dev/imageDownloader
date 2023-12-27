@@ -5,6 +5,7 @@ def download_image(pokemon_number):
     response = requests.get(url)
 
     if response.status_code == 200:
+        # Coloque o endereço de sua preferencia para a imagem ser salva
         with open(f'C:\\DEV\MEUS_PROJETOS\\pokenext\\public\\images\\pokemons\\{pokemon_number}.png', 'wb') as file:
             file.write(response.content)
         print(f'Imagem {pokemon_number}.png baixada com sucesso.')
