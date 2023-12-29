@@ -12,6 +12,6 @@ def download_image(pokemon_number):
     else:
         print(f'Erro ao baixar a imagem {pokemon_number}.')
 
-# Exemplo: Baixar a imagem do Pokémon número 10
+# Exemplo: baixar as imagens de 1 a 251 
 for pokemon_number in range(1, 252):
     download_image(pokemon_number)
